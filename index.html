@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="A website for travel destinations">
+    <meta name="keywords" content="HTML, CSS">
+    <meta name="author" content="Anastasia Andu">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/global.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Travel Site</title>
+</head>
+<body>
+    <header>
+        <!-- navigation bar -->
+        <nav class="main-nav">
+            <h2><a href="./index.html" class="main-nav__logo">Travel Site</a></h2>
+            <ul class="main-nav__list">
+                <li><a href="./index.html" class="main-nav__list-item">Home</a></li>
+                <li><a href="./pages/hawaii.html" class="main-nav__list-item">Hawaii</a></li>
+                <li><a href="./pages/iceland.html" class="main-nav__list-item">Iceland</a></li>
+                <li><a href="./pages/greece.html" class="main-nav__list-item">Greece</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- hero -->
+        <section class="hero">
+            <div class="hero__content">
+                <h1 class="hero__content-heading">
+                    Travelling Comes With Endless Discoveries
+                </h1>
+                <p class="hero__content-text">
+                    Don't let your dreams be just dreams. Experience the world by booking a vacation with us now.
+                </p>
+                <a href="#" class="hero__content-button">
+                    Get started
+                </a>
+            </div>
+            <img src="./assets/images/hero.png" alt="an aeroplane flying round a globe with a pinned destination" class="hero__image">
+        </section>
+        <!-- destinations -->
+        <section class="main-section">
+            <h3 class="main-section__heading">
+                Recommendations
+            </h3>
+            <div class="main-section__gallery">
+                <div class="main-section__card">
+                    <a href="./pages/hawaii.html" class="main-section__destination">
+                        <img src="./assets/images/hawaii.jpg" alt="a beautiful hawaiian shoreline with palm trees" class="main-section__image">
+                        <h3>
+                            Hawaii
+                        </h3>
+                    </a>
+                </div>
+                <div class="main-section__card">
+                    <a href="./pages/iceland.html" class="main-section__destination">
+                        <img src="./assets/images/iceland.jpg" alt="a birdseye view of green-covered mountains flanking a valley of flowing stream" class="main-section__image">
+                        <h3> 
+                            Iceland
+                        </h3>
+                    </a>
+                </div>
+                <div class="main-section__card">
+                    <a href="./pages/greece.html" class="main-section__destination">
+                        <img src="./assets/images/greece.jpg" alt="a view of a horizon showing buildings, trees and the ruins of greek architecture" class="main-section__image">
+                        <h3>
+                            Greece
+                        </h3>
+                    </a>
+                </div>    
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <!--contact information, opening days and times-->
+        <div class="footer__content">
+            <h3 class="footer__content-heading">
+                Contact
+            </h3>
+            <p class="footer__content-tag">
+                EMAIL
+            </p>
+            <p class="footer__content-detail">
+                info@travelsite.com
+            </p>
+        </div>
+        <div class="footer__content">
+            <h3 class="footer__content-heading">
+                Hours
+            </h3>
+            <div class="footer__content-body">
+                <div class="footer__content-section">
+                    <p class="footer__content-tag">
+                        MONDAY - FRIDAY
+                    </p>
+                    <p class="footer__content-detail">
+                        9:00 AM - 5:00 PM
+                    </p>
+                </div>
+                <div class="footer__content-section">
+                    <p class="footer__content-tag">
+                        SATURDAY
+                    </p>
+                    <p class="footer__content-detail">
+                        10:00 AM - 4:00 PM
+                    </p>
+                </div>
+                <div class="footer__content-section">
+                    <p class="footer__content-tag">
+                        SUNDAY
+                    </p>
+                    <p class="footer__content-detail">
+                        Closed
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="footer__content social">
+            <h3 class="footer__content-heading">
+                Social
+            </h3>
+            <div class="footer__content-section">
+                <img src="./assets/images/icon-instagram.png" alt="instagram-logo" class="footer__content-logo">
+                <img src="./assets/images/icon-facebook.png" alt="facebook-logo" class="footer__content-logo">
+                <img src="./assets/images/icon-twitter.png" alt="twitter-logo" class="footer__content-logo">
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
