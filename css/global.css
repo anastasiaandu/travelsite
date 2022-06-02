@@ -48,6 +48,17 @@ body {
     border-bottom: 4px solid #DB7A4E;
 }
 
+.main-section__card-component {
+    min-width: 15rem;
+    max-width: 18rem;
+    min-height: 22rem;
+    max-height: 25rem;
+    margin: 1rem;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    box-shadow: rgba(0, 0, 0, 0.2) 0 4px 4px;
+}
+
 .footer {
     height: 25vh;
     background-color: #FEFAF5;
