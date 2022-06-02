@@ -7,8 +7,8 @@
     <meta name="keywords" content="HTML, CSS">
     <meta name="author" content="Anastasia Andu">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/global.css">
-    <link rel="stylesheet" href="../css/destination.css">
+    <link rel="stylesheet" type="text/css" href="../css/global.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/destination.css"/>
     <title>Hawaii</title>
 </head>
 <body>
@@ -17,110 +17,112 @@
         <nav class="main-nav">
             <h2><a href="../index.html" class="main-nav__logo">Travel Site</a></h2>
             <ul class="main-nav__list">
-                <li><a href="../index.html" class="main-nav__list--item main-nav__list--home">Home</a></li>
-                <li><a href="./hawaii.html" class="main-nav__list--item main-nav__list--hawaii">Hawaii</a></li>
-                <li><a href="./iceland.html" class="main-nav__list--item main-nav__list--iceland">Iceland</a></li>
-                <li><a href="./greece.html" class="main-nav__list--item main-nav__list--greece">Greece</a></li>
+                <li><a href="../index.html" class="main-nav__list-item">Home</a></li>
+                <li><a href="./hawaii.html" class="main-nav__list-item main-nav__list-item--active">Hawaii</a></li>
+                <li><a href="./iceland.html" class="main-nav__list-item">Iceland</a></li>
+                <li><a href="./greece.html" class="main-nav__list-item">Greece</a></li>
             </ul>
         </nav>
     </header> 
-    <main>
+    <main class="main-section">
         <!-- itenary activities -->
-        <h1>
+        <h1 class="main-section__heading">
             Hawaii
         </h1>
-        <section>
-            <div>
-                <h3>
-                    Friday
-                </h3>
-                <ul>
-                    <li>Breakfast</li>
-                    <li>Lunch</li>
-                    <li>Lunch</li>
-                    <li>Snorkeling</li>
-                </ul>
+        <section class="main-section__gallery">
+            <div class="main-section__card main-section__card--list">
+                <div class="main-section__itinerary">
+                    <h3 class="main-section__day">
+                        Friday
+                    </h3>
+                    <ul class="main-section__activities">
+                        <li class="main-section__activity">Breakfast</li>
+                        <li class="main-section__activity">Lunch</li>
+                        <li class="main-section__activity">Dinner</li>
+                        <li class="main-section__activity">Snorkeling</li>
+                    </ul>
+                </div>
             </div>
-            <div>
-                <h3>
-                    Saturday
-                </h3>
-                <ul>
-                    <li>Breakfast</li>
-                    <li>Lunch</li>
-                    <li>Lunch</li>
-                    <li>Snorkeling</li>
-                </ul>
+            <div class="main-section__card main-section__card--list">
+                <div class="main-section__itinerary">
+                    <h3 class="main-section__day">
+                        Saturday
+                    </h3>
+                    <ul class="main-section__activities">
+                        <li class="main-section__activity">Breakfast</li>
+                        <li class="main-section__activity">Lunch</li>
+                        <li class="main-section__activity">Dinner</li>
+                        <li class="main-section__activity">Snorkeling</li>
+                    </ul>
+                </div>
             </div>
-            <div>
-                <h3>
-                    Sunday
-                </h3>
-                <ul>
-                    <li>Breakfast</li>
-                    <li>Lunch</li>
-                    <li>Lunch</li>
-                    <li>Snorkeling</li>
-                </ul>
+            <div class="main-section__card main-section__card--list">
+                <div>
+                    <h3 class="main-section__day">
+                        Sunday
+                    </h3>
+                    <ul class="main-section__activities">
+                        <li class="main-section__activity">Breakfast</li>
+                        <li class="main-section__activity">Lunch</li>
+                        <li class="main-section__activity">Dinner</li>
+                        <li class="main-section__activity">Snorkeling</li>
+                    </ul>
+                </div>
             </div>
         </section>  
     </main>
-    <footer>
+    <footer class="footer">
         <!--contact information, opening days and times-->
-        <div>
-            <div>
-                <h3>
-                    Contact
-                </h3>
-            </div>
-            <div>
-                <p>
-                    EMAIL
-                </p>
-                <p>
-                    info@travelsite.com
-                </p>
-            </div>
+        <div class="footer__content">
+            <h3 class="footer__content-heading">
+                Contact
+            </h3>
+            <p class="footer__content-tag">
+                EMAIL
+            </p>
+            <p class="footer__content-detail">
+                info@travelsite.com
+            </p>
         </div>
-        <div>
-            <h3>
+        <div class="footer__content">
+            <h3 class="footer__content-heading">
                 Hours
             </h3>
-            <div>
-                <div>
-                    <p>
+            <div class="footer__content-body">
+                <div class="footer__content-section">
+                    <p class="footer__content-tag">
                         MONDAY - FRIDAY
                     </p>
-                    <p>
+                    <p class="footer__content-detail">
                         9:00 AM - 5:00 PM
                     </p>
                 </div>
-                <div>
-                    <p>
+                <div class="footer__content-section">
+                    <p class="footer__content-tag">
                         SATURDAY
                     </p>
-                    <p>
+                    <p class="footer__content-detail">
                         10:00 AM - 4:00 PM
                     </p>
                 </div>
-                <div>
-                    <p>
+                <div class="footer__content-section">
+                    <p class="footer__content-tag">
                         SUNDAY
                     </p>
-                    <p>
+                    <p class="footer__content-detail">
                         Closed
                     </p>
                 </div>
             </div>
-            <div>
-                <div>
-                    Social
-                </div>
-                <div>
-                    <img src="../assets/images/icon-instagram.png" alt="instagram-logo">
-                    <img src="../assets/images/icon-facebook.png" alt="facebook-logo">
-                    <img src="../assets/images/icon-twitter.png" alt="twitter-logo">
-                </div>
+        </div>
+        <div class="footer__content">
+            <h3 class="footer__content-heading">
+                Social
+            </h3>
+            <div class="footer__content-section footer__content--images">
+                <img src="../assets/images/icon-instagram.png" alt="instagram-logo" class="footer__content-logo">
+                <img src="../assets/images/icon-facebook.png" alt="facebook-logo" class="footer__content-logo">
+                <img src="../assets/images/icon-twitter.png" alt="twitter-logo" class="footer__content-logo">
             </div>
         </div>
     </footer>

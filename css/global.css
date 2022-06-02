@@ -14,6 +14,7 @@ body {
     width: 100%;
     height: 4rem;
     position: fixed;
+    top: 0;
     z-index: 1;
     background-color: #FFFFFF;
     display: flex;
@@ -39,93 +40,12 @@ body {
     padding-bottom: 0.5rem;
 }
 
-.main-nav__list-item:active {
+.main-nav__list-item--active {
     border-bottom: 4px solid #DB7A4E;
 }
 
-.hero {
-    padding: 7rem;
-    background-color: #FEFAF5;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-.hero__content {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.hero__content-heading {
-    font-size: 2.5rem;
-    color: #335576;
-    padding-bottom: 2rem;
-}
-
-.hero__content-text {
-    color: #335576;
-    padding-bottom: 2rem;
-}
-
-.hero__content-button {
-    max-width: fit-content;
-    text-decoration: none;
-    background-color: #DB7A4E;
-    color: #FFFFFF;
-    padding: 0.5rem 2.2rem;
-    border-radius: 50px;
-}
-
-.hero__image {
-    min-width: 40%;
-    min-height: 100%;
-    max-width: 40%;
-    max-height: 100%;
-}
-
-.main-section {
-    padding: 3rem 7rem;
-    display: flex;
-    flex-direction: column;
-}
-
-.main-section__heading {
-    color: #335576;
-    margin-bottom: 1rem;
-}
-
-.main-section__gallery {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.main-section__image {
-    min-width: 12rem;
-    max-width: 15rem;
-    min-height: 18rem;
-    max-height: 21rem;
-    margin: 1rem;
-    border-radius: 5px;
-    border: 1px solid rgba(0, 0, 0, 0.2);
-    box-shadow: rgba(0, 0, 0, 0.2) 0 4px 4px;
-}
-
-.main-section__link {
-    text-decoration: none;
-}
-
-.main-section__figure {
-    position: relative;
-}
-
-.main-section__destination {
-    color: #FFFFFF;
-    position: absolute;
-    bottom: 2rem;
-    right: 2rem;
+.main-nav__list-item:hover {
+    border-bottom: 4px solid #DB7A4E;
 }
 
 .footer {
@@ -135,7 +55,7 @@ body {
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: center;
-    padding: 0 17rem;
+    padding: 0 15rem;
 }
 
 .footer__content {
