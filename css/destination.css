@@ -52,14 +52,15 @@
     padding: 1rem 4rem 0 4rem;
     border-bottom: 2px solid black;
     margin-bottom: 1.5rem;
+    text-align: center;
 }
 
 .main-section__activities {
     list-style-type: none;
+    text-align: center;
 }
 
 .main-section__activity {
-    text-align: center;
     padding-top: 0.75rem;
     padding-bottom: 0.75rem;
     margin-bottom: 1rem;

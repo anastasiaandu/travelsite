@@ -12,10 +12,11 @@
     <title>Travel Site</title>
 </head>
 <body>
-    <header>
-        <!-- navigation bar -->
+    <header class="site-header">
+        <!-- site title -->
+        <h2><a href="./index.html" class="site__title">Travel Site</a></h2>
+        <!-- navigation bar  -->
         <nav class="main-nav">
-            <h2><a href="./index.html" class="main-nav__logo">Travel Site</a></h2>
             <ul class="main-nav__list">
                 <li><a href="./index.html" class="main-nav__list-item main-nav__list-item--active">Home</a></li>
                 <li><a href="./pages/hawaii.html" class="main-nav__list-item">Hawaii</a></li>
@@ -25,7 +26,7 @@
         </nav>
     </header>
     <main>
-        <!-- hero -->
+        <!-- hero section with an image, text and button -->
         <section class="hero">
             <div class="hero__content">
                 <h1 class="hero__content-heading">
@@ -40,7 +41,7 @@
             </div>
             <img src="./assets/images/hero.png" alt="an aeroplane flying round a globe with a pinned destination" class="hero__image">
         </section>
-        <!-- destinations -->
+        <!-- main section with destinations on cards -->
         <section class="main-section">
             <h2 class="main-section__heading">
                 Recommendations
@@ -86,7 +87,7 @@
         </section>
     </main>
     <footer class="footer">
-        <!--contact information, opening days and times-->
+        <!-- contact information, opening days and times -->
         <div class="footer__content">
             <h3 class="footer__content-heading">
                 Contact
