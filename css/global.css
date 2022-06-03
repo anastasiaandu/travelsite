@@ -2,12 +2,11 @@
 * ::before,
 * ::after {
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
 }
 
 body {
     font-family: Verdana;
+    margin: 0;
 }
 
 .site-header {
@@ -19,7 +18,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1.5rem 5rem 1rem 5rem;
+    padding: 0 5rem;
 }
 
 .site__title {
@@ -53,24 +52,26 @@ body {
 }
 
 .main-section__card-component {
-    min-width: 15rem;
-    max-width: 18rem;
-    min-height: 22rem;
-    max-height: 25rem;
-    margin: 1rem;
+    width: 16rem;
+    height: 23rem;
+    margin: 0 1.25rem;
     border-radius: 5px;
-    border: 1px solid rgba(0, 0, 0, 0.2);
-    box-shadow: rgba(0, 0, 0, 0.2) 0 4px 4px;
 }
 
 .footer {
-    height: 25vh;
     background-color: #FEFAF5;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: center;
-    padding: 0 15rem;
+    padding: 3rem 13rem;
+}
+
+.footer__container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
 }
 
 .footer__content {
@@ -78,9 +79,16 @@ body {
     flex-direction: column;
 }
 
+.footer__content--social {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 .footer__content-heading {
-    padding-bottom: 1.5rem;
     color: #335576;
+    padding-bottom: 1.5rem;
+    margin: 0;
 }
 
 .footer__content-body {
@@ -88,15 +96,19 @@ body {
 }
 
 .footer__content-tag {
-    padding-bottom: 0.5rem;
     color: #DB7A4E;
-    font-size: 0.5rem;
+    font-size: 0.6rem;
+    font-weight: 500;
+    padding-bottom: 0.5rem;
+    margin: 0;
 }
 
 .footer__content-detail {
-    padding-right: 1.5rem;
     color: #335576;
-    font-size: 0.75rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+    padding: 0;
+    margin: 0 2rem 0 0;
 }
 
 .footer__content-logo {
@@ -104,6 +116,7 @@ body {
     max-width: 3rem;
     min-height: 1rem;
     max-height: 1.5rem;
+    margin-right: 0.5rem;
     padding-right: 1.5rem;
 }
 
