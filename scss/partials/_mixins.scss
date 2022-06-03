@@ -1,0 +1,21 @@
+@mixin brand-text{
+    color: #335576;
+    padding-bottom: 2rem;
+}
+
+@mixin background-image {
+    background-position: center;
+    background-size: cover;
+}
+
+@mixin display-space {
+    display: flex;
+    justify-content: space-between;
+}
+
+@mixin card {
+    width: 16rem;
+    height: 23rem;
+    margin: 0 1.25rem;
+    border-radius: 5px;
+}

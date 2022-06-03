@@ -1,0 +1,74 @@
+@use './partials/global';
+@use './partials/mixins';
+@use './partials/colors';
+
+
+.main-section {
+    margin-top: 4rem;
+    padding: 0 5rem;
+    display: flex;
+    flex-direction: column;
+
+    &__hawaii-background {
+        background-image: url(../assets/images/hawaii.jpg);
+        @include mixins.background-image;
+    }
+
+    &__iceland-background {
+        background-image: url(../assets/images/iceland.jpg);
+        @include mixins.background-image;
+    }
+
+    &__greece-background {
+        background-image: url(../assets/images/greece.jpg);
+        @include mixins.background-image;
+    }
+
+    &__heading {
+        color: colors.$default-color;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+        font-size: 4rem;
+    }
+
+    &__gallery {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    &__card-component {
+        @include mixins.card;
+
+        &--list {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 7rem;
+            background-color: colors.$default-color;
+        }
+    }
+
+    &__itinerary {
+        width: 14rem;
+    }
+
+    &__day{
+        padding: 0 4rem;
+        border-bottom: 3px solid black;
+        margin: 0.75rem 0 1.5rem 0;
+        text-align: center;
+    }
+
+    &__activities {
+        list-style-type: none;
+        text-align: center;
+        padding: 0;
+    }
+
+    &__activity {
+        padding: 0.75rem 0;
+        margin-bottom: 1rem;
+        background-color: colors.$background-color;
+    }
+}

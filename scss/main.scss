@@ -1,0 +1,93 @@
+@use './partials/global';
+@use './partials/mixins';
+@use './partials/colors';
+
+
+.hero {
+    height: 85vh;
+    background-color: colors.$background-color;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    &__content {
+        width: 57%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 7rem 0 7rem 5rem;
+    }
+
+    &__content-heading {
+        font-size: 2.5rem;
+        @include mixins.brand-text;
+    }
+
+    &__content-text {
+        @include mixins.brand-text;
+    }
+
+    &__content-button {
+        max-width: fit-content;
+        text-decoration: none;
+        background-color: colors.$feature-color;
+        color: colors.$default-color;
+        padding: 0.7rem 2.5rem;
+        border-radius: 50px;
+    }
+
+    &__image-container {
+        width: 40%;
+        height: 100%;
+        padding: 7rem 5rem 3rem 0;
+    }
+
+    &__image {
+        min-width: auto;
+        max-height: 90%;
+    }
+}
+
+.main-section {
+    padding: 0 5rem;
+    display: flex;
+    flex-direction: column;
+
+    &__heading {
+        color: colors.$brand-color;
+        margin-top: 2.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    &__gallery {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    &__link {
+        text-decoration: none;
+    }
+
+    &__figure {
+        position: relative;
+        margin: 0;
+    }
+
+    &__card-component {
+        @include mixins.card;
+
+        &--image {
+            margin-bottom: 5rem;
+            border: 1px solid rgba(0, 0, 0, 0.2);
+            box-shadow: rgba(0, 0, 0, 0.2) 0 4px 4px;
+        }
+    }
+
+    &__destination {
+        color: colors.$default-color;
+        position: absolute;
+        bottom: 5rem;
+        right: 2.5rem;
+    }
+}
