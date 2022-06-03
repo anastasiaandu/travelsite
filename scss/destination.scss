@@ -3,26 +3,28 @@
 @use './partials/colors';
 
 
+.body {
+    &__hawaii-background {
+        background-image: url('../assets/images/hawaii.jpg');
+        @include mixins.background-image;
+    }
+
+    &__iceland-background {
+        background-image: url('../assets/images/iceland.jpg');
+        @include mixins.background-image;
+    }
+
+    &__greece-background {
+        background-image: url('../assets/images/greece.jpg');
+        @include mixins.background-image;
+    }
+}
+
 .main-section {
     margin-top: 4rem;
     padding: 0 5rem;
     display: flex;
     flex-direction: column;
-
-    &__hawaii-background {
-        background-image: url(../assets/images/hawaii.jpg);
-        @include mixins.background-image;
-    }
-
-    &__iceland-background {
-        background-image: url(../assets/images/iceland.jpg);
-        @include mixins.background-image;
-    }
-
-    &__greece-background {
-        background-image: url(../assets/images/greece.jpg);
-        @include mixins.background-image;
-    }
 
     &__heading {
         color: colors.$default-color;

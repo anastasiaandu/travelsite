@@ -1,10 +1,5 @@
-@mixin brand-text{
-    color: #335576;
-    padding-bottom: 2rem;
-}
-
 @mixin background-image {
-    background-position: center;
+    background-position: center 60%;
     background-size: cover;
 }
 
