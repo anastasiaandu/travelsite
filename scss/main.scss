@@ -35,6 +35,11 @@
         color: colors.$default-color;
         padding: 0.7rem 2.5rem;
         border-radius: 50px;
+        transition: transform 0.3s;
+
+        &:hover {
+            transform: scale(1.1);
+        }
     }
 
     &__image-container {

@@ -100,6 +100,11 @@ body {
   margin-right: 0.5rem;
   padding-right: 1.5rem;
 }
+.footer__booking {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
 
 .hero {
   height: 85vh;
@@ -132,6 +137,10 @@ body {
   color: #FFFFFF;
   padding: 0.7rem 2.5rem;
   border-radius: 50px;
+  transition: transform 0.3s;
+}
+.hero__content-button:hover {
+  transform: scale(1.1);
 }
 .hero__image-container {
   width: 40%;

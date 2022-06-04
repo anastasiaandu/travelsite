@@ -112,4 +112,10 @@ body {
         margin-right: 0.5rem;
         padding-right: 1.5rem;
     }
+
+    &__booking {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
 }
