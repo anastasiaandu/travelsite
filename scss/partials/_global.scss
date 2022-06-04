@@ -32,6 +32,7 @@ body {
 
 .main-nav {
     @include mixins.display-space;
+    flex-wrap: wrap;
 
     &__list {
         list-style-type: none;
@@ -60,7 +61,7 @@ body {
     @include mixins.display-space;
     flex-wrap: wrap;
     align-items: center;
-    padding: 3rem 13rem;
+    padding: 3rem 13rem 2rem 13rem;
 
     &__container {
         @include mixins.display-space;
@@ -71,6 +72,7 @@ body {
     &__content {
         display: flex;
         flex-direction: column;
+        margin-bottom: 1rem;
 
         &--social {
             @include mixins.display-space;
@@ -111,11 +113,5 @@ body {
         max-height: 1.5rem;
         margin-right: 0.5rem;
         padding-right: 1.5rem;
-    }
-
-    &__booking {
-        position: fixed;
-        bottom: 0;
-        width: 100%;
     }
 }
