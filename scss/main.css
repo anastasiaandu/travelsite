@@ -140,13 +140,14 @@ body {
   transform: scale(1.1);
 }
 .hero__image-container {
+  display: flex;
+  align-items: center;
   width: 40%;
   height: 100%;
   padding: 7rem 5rem 3rem 0;
 }
 .hero__image {
-  min-width: auto;
-  max-height: 90%;
+  height: 65%;
 }
 
 .main-section {
